@@ -54,7 +54,7 @@ body {
 .banner {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     margin: 221px 150px 0px 150px;
 }
 
@@ -79,7 +79,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin: 120px 150px 0px 150px;
+      margin: 120px 150px 83px 150px;
     
 }
 .intro{
@@ -117,38 +117,59 @@ body {
 }
 .card-button {
     background-color: #E95A08;
-    padding: 26px 50px;
-    
+    width: 270px;
+    height: 50px;
+    text-align: center;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: none;
+    font-family: Inter, sans-serif;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.certificate {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    align-items: flex-start; 
+    margin: 210px 150px;
+    
+}
+.trust-container{
+    position: relative;
+    display: inline-block;
+}
+.flower-img {
+    width: 540px;
+    height: 557px;
+    display: block;
+}
+.trusted-img{
+    position: relative;
+    z-index: 10;
+    top: -700px;
+    right: -350px;
+    height: 286px;
+    width: 286px;
+    filter: drop-shadow(0px 0px 5px rgba(9, 9, 9, 0.51));
+}
+.flower-texts{
+     flex: 1;
+  margin-top: 38px;
+    margin-bottom: 38px;
+    margin-left: 30px;
+}
+.flower-title {
+    font-family: noto serif, serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+.ul-des{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    font-family: Inter, sans-serif;
+    padding-left: 30px;
+    padding-top: 20px;
+}
 
 
 
@@ -199,11 +220,75 @@ body {
         gap: 13px;
     }
     .title {
-        font-size: 28px;
+        font-size: 24px;
     }
     .description {
         font-size: 14px;
     }
+    
+    .card-container {
+        margin: 28px 15px 65px 15px;
+    } 
+    .cards {
+        margin: 0;
+    }
+
+.intro-title{
+    font-size: 24px;
+}
+    .intro-description {
+        width: 366px;
+        height: 68px;
+        font-size: 14px;
+    }
+    .cards-list {
+         padding-left: 5px;
+        padding-right: 5px;
+        display: grid;
+         margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: -28px;
+    }
+
+.certificate {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 15px;
+  margin: 40px 0 0 0;
+  box-sizing: border-box;
 }
 
+.trust-container {
+  width: 100%;
+  position: relative;
+  margin-bottom: 18px;
+}
 
+.flower-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 18px;
+}
+
+.trusted-img {
+  display: none;
+}
+
+.flower-texts {
+  width: 94%;
+  box-sizing: border-box;
+  margin-right: 15px;
+  margin-top: -18px;
+}
+.flower-title{
+    font-size: 24px;
+    font-weight: bold;
+}
+.ul-des{
+    font-size: 14px;
+    gap: 16px;
+    padding-left: 20px;
+}
+    
+}
