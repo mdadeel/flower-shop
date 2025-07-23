@@ -109,6 +109,16 @@ body {
 }
 .card-item {
     text-align: center;
+    display: grid;
+    font-size: 22px;
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.card-button {
+    background-color: #E95A08;
+    padding: 26px 50px;
+    
 }
 
 
