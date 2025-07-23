@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+ 
+}
+.noto-serif-normal {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.inter-normal {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+body {
+    background-color: #F5F8FF;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 150px 109px 150px;
+     
+}
+.logo {
+    width: 135px;
+    height: 82px;
+}
+.nav-items{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.cart{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 221px 150px 0px 150px;
+}
+
+.title {
+    color: #000000;
+    font-weight: bold;
+    font-family: 'noto serif' 'serif';
+    font-size: 65px;
+}
+.title span {
+    color: #E95A08;
+}
+.description{
+    font-family: 'inter';
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* resposive */
+@media screen and (max-width: 576px){
+    .navbar {
+        margin: 13px 16px 0px 16px;
+    }
+    .nav{
+        margin: 10px 10px 30px 10px;
+        display: none;
+    }
+    .logo {
+        width: 63px;
+        height: 38px;
+    }
+    .nav-items{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+         padding-top: 7px;
+         padding-bottom: 7px;
+    }
+ .banner {
+        flex-direction: column;
+        margin: 13px 0 0 0;
+        padding: 0;
+        align-items: stretch;
+    }
+    .banner-img {
+        order: 1;
+        width: 100%;
+    }
+    .banner-img img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+        .banner-items {
+        display: grid;
+        order: 2;
+        margin: 28px 16px 65px 16px;
+        gap: 13px;
+    }
+    .title {
+        font-size: 28px;
+    }
+    .description {
+        font-size: 14px;
+    }
+}
+
+
