@@ -131,7 +131,10 @@ body {
     gap: 60px;
     justify-content: center;
     align-items: flex-start; 
-    margin: 210px 150px;
+    margin-top: 210px;
+    margin-left:  150px;
+    margin-right: 150px;
+    margin-bottom: -150px;
     
 }
 .trust-container{
@@ -172,7 +175,7 @@ body {
 }
 
 .deals-section {
-  padding: 2rem;
+  padding: 2rem 16px;
   text-align: center;
 }
 
@@ -189,12 +192,11 @@ body {
 }
 
 .subheading {
-  margin-left: 226px;
-    margin-right: 226px;
+  margin: 0 auto 2rem;
   font-size: 22px;
-    font-family: Inter, sans-serif;
-    color: rgba(0, 0, 0, 0.5);
-    margin-bottom: 120px;
+  font-family: Inter, sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 800px;
 }
 
 .deals-container {
@@ -322,7 +324,7 @@ body {
   cursor: pointer;
 }
 
-/* ========== Footer ========== */
+
 .footer {
   background-color: #f4f7fe;
   padding: 60px 16px;
@@ -332,7 +334,7 @@ body {
 
 .footer-container {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 50px 160px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -345,13 +347,15 @@ body {
 }
 
 .footer-logo {
-  height: 40px;
+  height: 80px;
+  width: 130px;
   margin-bottom: 1rem;
 }
 
 .footer-brand p {
-  max-width: 300px;
-  line-height: 1.6;
+      font-family: Inter, sans-serif ;
+    font-size: 23px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .footer-links {
@@ -370,17 +374,16 @@ body {
 .link-column a {
   color: #4b5563;
   text-decoration: none;
-}
-
-.link-column a:hover {
-  text-decoration: underline;
+  margin-bottom: 32px;
+  font-family: Inter, sans-serif ;
+  color: gray;
 }
 
 .footer-social {
   flex: 1 1 150px;
   display: flex;
   justify-content: flex-end;
-  gap: 1rem;
+  gap: 34px;
   align-items: center;
 }
 
@@ -515,4 +518,89 @@ body {
     padding-left: 20px;
 }
     
+.deals-container {
+  flex-direction: column;
+  margin: 0 16px 40px 16px;
+  gap: 20px;
+  align-items: center;
+}
+
+.column-container {
+  width: 100%;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.deal-card,
+.deal-card.small,
+.deal-card.large {
+  width: 100%;
+  height: 200px;
+}
+
+.overlay h3 {
+  font-size: 16px;
+}
+
+.overlay a {
+  font-size: 14px;
+}
+.subscribe-section {
+    padding: 30px 0;
+  }
+
+  .subscribe-content {
+    max-width: 390px;
+    height: 275px;
+    padding: 0 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 20px
+  }
+
+  .subscribe-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+.subscribe-form button{
+    align-self: center;
+}
+  .subscribe-form input,
+  .subscribe-form button {
+    width: 50%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+.footer-container {
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px 15px;
+}
+
+.footer-brand,
+.footer-links,
+.footer-social,
+.link-column {
+  align-items: flex-start;
+  text-align: left;
+}
+
+.link-column a {
+  margin-bottom: 16px;
+}
+
+
+
 }
